@@ -1,0 +1,35 @@
+This Is SHAMNA SHERI PROGRAMME
+-------------------------------
+<br>
+<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capital</title>
+</head>
+<body>
+    <select id="country" onchange="capitaldisplay()"><option>Country</option>
+        <option value="india">India</option>
+    <option value="mexico">Mexico</option>
+<option value="america">America</option>
+<option value="canada">Canada</option></select>
+<input type="text" id="capital">
+<script>
+    document.getElementById('country').value;
+    document.getElementById('capital').value;
+    let colr={india:'New Delhi',
+        mexico:'Mexico city',
+        america:'Washington,D.c.',
+        canada:'Ottawa'
+    }
+    function capitaldisplay()
+    {
+    const selectcountry=country.value;
+    const selectcapital=colr[selectcountry];
+    capital.value=selectcapital;
+    }
+</script>
+</body>
+</html>

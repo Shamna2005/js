@@ -1,0 +1,45 @@
+This Is SHAMNA SHERI PROGRAMME
+-------------------------------
+<br>
+<br>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Year</title>
+</head>
+
+<body>
+    <form>
+        <label for="first">1st no = </label>
+        <input type="text" id="first" placeholder="Enter first number"><br><br>
+        <label for="second">2nd no = </label>
+        <input type="text" id="second" placeholder="Enter second number"><br><br>
+        <input type="button" id="submit" value="Submit" onclick="findsunday()"><br><br>
+        <p id="result"></p>
+    </form>
+
+    <script>
+
+        function findsunday() {
+            let first = parseInt(document.getElementById('first').value);
+            let second = parseInt(document.getElementById('second').value);
+            let result = document.getElementById('result');
+            // console.log(first);
+            // console.log(second);
+            for (let i = first; i < second; i++) {
+                let date = new Date(i, 0, 1);
+                //console.log(date);
+                if (date.getDay() === 0) {
+                    result.innerHTML += i+" first january is sunday <br>";
+                }
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

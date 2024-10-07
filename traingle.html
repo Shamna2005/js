@@ -1,0 +1,44 @@
+This Is SHAMNA SHERI PROGRAMME
+-------------------------------
+<br>
+<br>
+<html>
+    <head>
+        <script language="javascript">
+function triangle()
+{
+    a=parseInt(prompt("enter a triangle"))
+    b=parseInt(prompt("enter a triangle"))
+    c=parseInt(prompt("enter a triangle"))
+    if(a+b>c&&b+c>a&&c+a>b)
+    {
+        alert("can form a triangle")
+        s=(a+b+c)/2
+        area=(s*(s-a)*(s-b)*(s-c))
+        document.getElementById('result').innerHTML=area
+        }
+    else{
+    alert("cannot form a triangle")
+    }
+    if((a===b)&&(b===c))
+{
+    alert("equailateral")
+}
+else if((a===b)||(b===c)||(c===a))
+{
+    alert("isosceles")
+}
+
+else
+{
+    alert("scalane")
+}
+}
+        </script>
+    </head>
+    <body>
+        <form>
+        <input type="button" value="display" onclick="triangle()">
+        <div id="result">result</div></form>
+    </body>
+</html>

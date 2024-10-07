@@ -1,0 +1,31 @@
+This Is SHAMNA SHERI PROGRAMME
+-------------------------------
+<br>
+<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text</title>
+    <script>
+        function upadte()
+        {
+            let colr=document.getElementById('color').style.color="red";
+            document.getElementById('color').style.backgroundColor="green"
+        }
+
+        function change()
+        {
+            let colr=document.getElementById('color').style.color="black";
+            document.getElementById('color').style.backgroundColor="blue";
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label> Name = </label>
+        <input type="text" id="color" onblur="upadte()" onfocus="change()"><br><br>
+    </form>
+</body>
+</html>

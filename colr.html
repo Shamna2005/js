@@ -1,0 +1,23 @@
+This Is SHAMNA SHERI PROGRAMME
+-------------------------------
+<br>
+<br>
+<html>
+    <head>
+        <title>color</title>
+        <script>
+            let color=["red","blue","black"]
+            let index=0
+            function chnagecolr()
+            {
+                index=(index+1)%color.length;
+                //document.getElementById("page");
+                document.body.style.backgroundColor=color[index];
+            }
+              </script>
+    </head>
+    <body>
+        <input type="button" value="change color" onClick="chnagecolr()">
+        <div id="page" style="width:3000px; height: 1000px;"></div>
+    </body>
+</html>

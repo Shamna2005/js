@@ -1,0 +1,41 @@
+This Is SHAMNA SHERI PROGRAMME
+-------------------------------
+<br>
+<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>email</title>
+    <script>
+function validate() 
+    {
+        let email=document.getElementById("email").value;
+        let i=email.includes("@") && email.includes('.');
+        if(i)
+        {
+            let[username,rest]=email.split('@')
+            let[mailserver,domain]=rest.split('.')
+            if(username.length>=1 && rest.length>=1 && domain.length>=2 && mailserver.length>=2)
+            {
+                alert('valid email id')
+            }
+            else{
+                alert('invalid email id')
+            }
+        }
+        else{
+            alert('invalid mail id')
+        }
+    }
+    </script>
+</head>
+<body>
+    <form>
+        <label>Email=</label>
+        <input type="text" id="email" placeholder="enter your email">
+        <input type="button" value="submit" onclick="validate()">
+    </form>
+</body>
+</html>
